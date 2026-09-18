@@ -1,5 +1,7 @@
 # Customer Churn Prediction — ML Demo
 
+**English** | [繁體中文](README.zh-TW.md)
+
 > A visual, reproducible classification demo for AI / data science.  
 > **Synthetic data · No API key · No company data**
 
