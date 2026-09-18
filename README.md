@@ -1,16 +1,44 @@
-# Customer Churn Prediction — Machine Learning Demo
+# Customer Churn Prediction — ML Demo
 
-A compact, reproducible teaching project using **synthetic data only** and **no API key required**.
+> A visual, reproducible classification demo for AI / data science teaching.  
+> **Synthetic data · No API key · No company data**
 
-## Learning goals
-- Frame churn as a classification problem
-- Build preprocessing with scikit-learn Pipeline
-- Compare Logistic Regression and Random Forest
-- Evaluate Accuracy, Precision, Recall, F1 and ROC-AUC
-- Connect model output to business actions
+## What this project demonstrates
 
-## Architecture
-Synthetic Customer Data → Preprocessing → Models → Evaluation
+```mermaid
+flowchart LR
+A[Customer data] --> B[Preprocessing]
+B --> C1[Logistic Regression]
+B --> C2[Random Forest]
+C1 --> D[Model evaluation]
+C2 --> D
+D --> E[Retention insight]
+```
+
+### Model evaluation dashboard
+
+| Metric | What students learn |
+|---|---|
+| Accuracy | Overall correctness |
+| Precision | How many predicted churners really churn |
+| Recall | How many actual churners we find |
+| F1 | Balance of precision and recall |
+| ROC-AUC | Ranking ability across thresholds |
+
+```mermaid
+flowchart TD
+A[Business question: Who may churn?] --> B{Prediction}
+B -->|High risk| C[Retention action]
+B -->|Low risk| D[Normal engagement]
+C --> E[Discuss false-positive cost]
+C --> F[Discuss false-negative cost]
+```
+
+## Teaching storyline
+
+**Business problem → features → preprocessing → model → metrics → business decision**
+
+This makes the project suitable for explaining why a model with high accuracy is not automatically the best business model.
 
 ## Quick start
 ```bash
@@ -20,7 +48,10 @@ python src/generate_data.py
 python src/train.py
 ```
 
-## Privacy & security
-Synthetic data only. No credentials, tokens, API keys or company data.
+The training script produces `model_metrics.json`, making it easy to compare models and extend the demo with charts.
 
-See `TEACHING_GUIDE.md` for the lesson flow.
+## Topics I can teach with this project
+Classification · feature engineering · one-hot encoding · train/test split · Logistic Regression · Random Forest · Precision/Recall/F1 · ROC-AUC · threshold tuning · model interpretation
+
+## Privacy & security
+All records are generated synthetically with a fixed random seed. No credentials, API keys, customer records or company information are used.
