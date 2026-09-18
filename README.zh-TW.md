@@ -2,7 +2,7 @@
 
 [English](README.md) | **繁體中文**
 
-> 適合 AI／資料科學教學的視覺化、可重現分類模型範例。  
+> AI／資料科學的視覺化、可重現分類模型範例。  
 > **合成資料 · 不需要 API Key · 不含公司資料**
 
 ## 專案展示內容
@@ -47,7 +47,7 @@ xychart-beta
 | Logistic Regression | 0.749 | 0.646 | 0.436 | 0.520 | 0.788 |
 | Random Forest | 0.685 | 0.494 | 0.359 | 0.416 | 0.714 |
 
-這個結果也很適合用於教學：**模型越複雜，不代表效果一定越好。**
+結果：**模型越複雜，不代表效果一定越好。**
 
 ## 教學脈絡
 
@@ -64,7 +64,7 @@ python src/generate_data.py
 python src/train.py
 ```
 
-## 可延伸教學主題
+## 可延伸主題
 
 Classification · Feature Engineering · One-hot Encoding · Train/Test Split · Logistic Regression · Random Forest · Precision/Recall/F1 · ROC-AUC · Threshold Tuning · Model Interpretation
 
