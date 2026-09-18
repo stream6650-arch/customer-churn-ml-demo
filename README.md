@@ -40,6 +40,30 @@ C --> F[Discuss false-negative cost]
 
 This makes the project suitable for explaining why a model with high accuracy is not automatically the best business model.
 
+## Actual result charts
+
+The following results are generated from the repository's synthetic dataset (fixed seed = 42), not manually invented values.
+
+### Model metrics
+
+```mermaid
+xychart-beta
+    title "Model evaluation"
+    x-axis ["Accuracy","Precision","Recall","F1","ROC-AUC"]
+    y-axis "Score" 0 --> 1
+    bar [0.749,0.646,0.436,0.520,0.788]
+    bar [0.685,0.494,0.359,0.416,0.714]
+```
+
+**Series 1: Logistic Regression · Series 2: Random Forest**
+
+| Model | Accuracy | Precision | Recall | F1 | ROC-AUC |
+|---|---:|---:|---:|---:|---:|
+| Logistic Regression | 0.749 | 0.646 | 0.436 | 0.520 | 0.788 |
+| Random Forest | 0.685 | 0.494 | 0.359 | 0.416 | 0.714 |
+
+The result is also useful pedagogically: a more complex model does not automatically outperform a simpler model.
+
 ## Quick start
 ```bash
 python -m venv .venv
