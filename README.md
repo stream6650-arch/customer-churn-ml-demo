@@ -1,6 +1,6 @@
 # Customer Churn Prediction — ML Demo
 
-> A visual, reproducible classification demo for AI / data science teaching.  
+> A visual, reproducible classification demo for AI / data science.  
 > **Synthetic data · No API key · No company data**
 
 ## What this project demonstrates
@@ -62,7 +62,7 @@ xychart-beta
 | Logistic Regression | 0.749 | 0.646 | 0.436 | 0.520 | 0.788 |
 | Random Forest | 0.685 | 0.494 | 0.359 | 0.416 | 0.714 |
 
-The result is also useful pedagogically: a more complex model does not automatically outperform a simpler model.
+A more complex model does not automatically outperform a simpler model.
 
 ## Quick start
 ```bash
@@ -74,7 +74,7 @@ python src/train.py
 
 The training script produces `model_metrics.json`, making it easy to compare models and extend the demo with charts.
 
-## Topics I can teach with this project
+## Topics we can discuss with this project
 Classification · feature engineering · one-hot encoding · train/test split · Logistic Regression · Random Forest · Precision/Recall/F1 · ROC-AUC · threshold tuning · model interpretation
 
 ## Privacy & security
