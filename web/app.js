@@ -24,6 +24,6 @@ fetch('model.json').then(r => {if (!r.ok) throw Error('model');return r.json();}
     $('flagged').textContent=`${tp+fp} / ${m.testRows}`;
   }
   $('inputs').addEventListener('input',update);$('inputs').addEventListener('submit',e=>e.preventDefault());$('threshold').addEventListener('input',update);
-  $('reset').addEventListener('click',()=>{$('inputs').reset();$('threshold').value=50;update();});
+  $('reset-button').addEventListener('click',()=>{$('inputs').reset();$('threshold').value=50;update();});
   $('loading').hidden=true;$('demo').hidden=false;update();
 }).catch(()=>{$('loading').textContent='模型載入失敗，請重新整理頁面再試一次。';});
