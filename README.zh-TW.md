@@ -5,6 +5,18 @@
 > AI／資料科學的視覺化、可重現分類模型範例。  
 > **合成資料 · 不需要 API Key · 不含公司資料**
 
+## 作品集網站
+
+網站入口：https://stream6650-arch.github.io/customer-churn-ml-demo/
+
+包含繁體中文專案介紹、實際模型指標比較、客戶輪廓互動預測，以及可調整門檻的測試集 Precision / Recall。瀏覽器使用匯出的 Logistic Regression 參數，無需 Python 後端。
+
+網站原始碼位於 `web/`。本機預覽：`python -m http.server 8000 --directory web`。
+
+重新產生模型與評估數據：`python scripts/export_web.py`。匯出程序會比對全部 375 筆測試資料，驗證瀏覽器使用的公式與 sklearn 預測一致。套件版本可能導致指標與下方歷史紀錄略有差異，網站以 `web/model.json` 的實際輸出為準。
+
+推送到 `main` 後，`.github/workflows/pages.yml` 會部署 `web/` 到 GitHub Pages。首次部署若權限限制而無法自動啟用，請在 Settings → Pages → Build and deployment 選擇 GitHub Actions。
+
 ## 專案展示內容
 
 ```mermaid

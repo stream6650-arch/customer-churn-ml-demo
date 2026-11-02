@@ -5,6 +5,14 @@
 > A visual, reproducible classification demo for AI / data science.  
 > **Synthetic data · No API key · No company data**
 
+## Interactive portfolio
+
+[Open the website](https://stream6650-arch.github.io/customer-churn-ml-demo/)
+
+The Traditional Chinese portfolio includes model comparisons, browser-local logistic regression predictions, and threshold-dependent holdout metrics. Source: `web/`. Preview with `python -m http.server 8000 --directory web`. Regenerate the exported model with `python scripts/export_web.py`; the exporter checks all 375 holdout predictions against sklearn. The website reports the current export; package versions may cause small differences from the historical results below.
+
+Pushes to `main` deploy through `.github/workflows/pages.yml`. If automatic Pages enablement is restricted, select GitHub Actions in Settings → Pages.
+
 ## What this project demonstrates
 
 ```mermaid
